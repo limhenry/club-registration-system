@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Club Registration System</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.yellow-blue.min.css" />
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="images/android-desktop.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+		<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+		<meta name="msapplication-TileColor" content="#3372DF">
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		
+		<%= yield %>
+		<!--<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>-->
+	</body>
+</html>

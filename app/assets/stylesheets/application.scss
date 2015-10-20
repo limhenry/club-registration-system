@@ -1,0 +1,32 @@
+@import 'slick';
+@import 'slick-theme';
+
+.scroller {
+  div {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #000;
+}
+
+.slick-next {
+  right: -20px;
+}
+
+.slick-prev {
+  left: -20px;
+  z-index:1;
+}
+
+.slider-section{
+	position: relative;
+    height: 800px;
+    margin:100px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('images/slide01.jpg') center 30% no-repeat;
+    background-size: cover;
+}

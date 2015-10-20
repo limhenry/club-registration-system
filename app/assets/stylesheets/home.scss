@@ -1,0 +1,12 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.slider-section{
+	position: relative;
+    height: 800px;
+    width: auto;
+    background-color: #f3f3f3;
+    background: url('images/slide01.jpg') center 30% no-repeat;
+    background-size: cover;
+}

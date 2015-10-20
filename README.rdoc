@@ -1,0 +1,27 @@
+== README
+
+Github : https://github.com/its-cyberjaya/club-registration-system
+Web framework : Ruby On Rails 
+Design framework : Material Design Lite
+Database: Postgres
+Database Design : https://www.lucidchart.com/documents/view/c3f15bea-f144-4d36-9dc1-da3858020a0a/0?fb=true
+Rails Version : 4.2.1
+
+Initial Setup
+
+For Windows users follow this guide :
+https://bruceoutdoors.wordpress.com/2015/09/18/rails-on-linux-on-windows-with-vagrant/ - Thanks to Bruceoutdoors
+
+For Osx 10 above users follow this guide :
+https://gorails.com/setup/osx/10.10-yosemite
+
+For Linux users follow this guide:
+https://gorails.com/setup/ubuntu/15.04
+
+
+Create .env file on root folder (Production database haven't setup yet) :
+DEV_DATABASE_URL="postgres://username@localhost/crs"
+#PROD_DATABASE_URL="postgres://"
+DOMAIN_NAME="crs.herokuapp.com"
+
+

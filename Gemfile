@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+#Ruby Version 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin14]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'

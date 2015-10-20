@@ -23,10 +23,20 @@
 
 .slider-section{
 	position: relative;
-    height: 800px;
+    height: 500px;
     margin:100px;
+    margin: 50px 100px 0 100px;
     width: auto;
-    background-color: #f3f3f3;
-    background: url('images/slide01.jpg') center 30% no-repeat;
-    background-size: cover;
+}
+
+.home-font{
+    font-family: 'And Black', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: #767777;
+    font-weight: 300;
+}
+
+.all-clubs{
+	font-size: 60px;
+    padding-top: 50px;
 }

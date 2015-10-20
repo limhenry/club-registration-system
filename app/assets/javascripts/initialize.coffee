@@ -1,4 +1,6 @@
 jQuery ->
   $('.scroller').slick({
-    dots: true
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
   })

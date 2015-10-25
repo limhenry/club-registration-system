@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151014135047) do
+ActiveRecord::Schema.define(version: 20151024030729) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "clubs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "slogan"
+    t.string   "description"
+    t.string   "url"
+    t.string   "fb_link"
+    t.string   "twitter_link"
+    t.string   "instagram_link"
+    t.string   "youtube_link"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "logo_image_file_name"
+    t.string   "logo_image_content_type"
+    t.integer  "logo_image_file_size"
+    t.datetime "logo_image_updated_at"
+  end
 
   create_table "models", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -28,7 +48,7 @@ ActiveRecord::Schema.define(version: 20151014135047) do
     t.datetime "updated_at",                          null: false
   end
 
-  add_index "models", ["email"], name: "index_models_on_email", unique: true
-  add_index "models", ["reset_password_token"], name: "index_models_on_reset_password_token", unique: true
+  add_index "models", ["email"], name: "index_models_on_email", unique: true, using: :btree
+  add_index "models", ["reset_password_token"], name: "index_models_on_reset_password_token", unique: true, using: :btree
 
 end

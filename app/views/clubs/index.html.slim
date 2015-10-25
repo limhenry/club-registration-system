@@ -1,0 +1,39 @@
+h1 Listing clubs
+
+table
+  thead
+    tr
+      th Name
+      th Slogan
+      th Description
+      th Logo
+      th Url
+      th Url
+      th Fb link
+      th Twitter link
+      th Instagram link
+      th Youtube link
+      th
+      th
+      th
+
+  tbody
+    - @clubs.each do |club|
+      tr
+        td = club.name
+        td = club.slogan
+        td = club.description
+        td = club.logo_image
+        td = club.url
+        td = club.url
+        td = club.fb_link
+        td = club.twitter_link
+        td = club.instagram_link
+        td = club.youtube_link
+        td = link_to 'Show', club
+        td = link_to 'Edit', edit_club_path(club)
+        td = link_to 'Destroy', club, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Club', new_club_path

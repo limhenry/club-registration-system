@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :clubs
   devise_for :models
   root to: "home#index"
   devise_for :users, controllers: { sessions: "users/sessions" }

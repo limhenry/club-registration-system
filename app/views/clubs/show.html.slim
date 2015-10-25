@@ -1,0 +1,36 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @club.name
+p
+  strong Slogan:
+  = @club.slogan
+p
+  strong Description:
+  = @club.description
+p
+  strong Logo:
+  = link_to image_tag(@club.logo_image.url(:medium)), @club.logo_image.url
+p
+  strong Url:
+  = @club.url
+p
+  strong Url:
+  = @club.url
+p
+  strong Fb link:
+  = @club.fb_link
+p
+  strong Twitter link:
+  = @club.twitter_link
+p
+  strong Instagram link:
+  = @club.instagram_link
+p
+  strong Youtube link:
+  = @club.youtube_link
+
+= link_to 'Edit', edit_club_path(@club)
+'|
+= link_to 'Back', clubs_path

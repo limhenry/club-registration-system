@@ -1,0 +1,40 @@
+= form_for @club, html: { multipart: true } do |f|
+  - if @club.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@club.errors.count, "error")} prohibited this club from being saved:"
+      ul
+        - @club.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :slogan
+    = f.text_field :slogan
+  .field
+    = f.label :description
+    = f.text_field :description
+  .field
+    = f.label :url
+    = f.text_field :url
+  .field
+    = f.label :url
+    = f.text_field :url
+  .field
+    = f.label :fb_link
+    = f.text_field :fb_link
+  .field
+    = f.label :twitter_link
+    = f.text_field :twitter_link
+  .field
+    = f.label :instagram_link
+    = f.text_field :instagram_link
+  .field
+    = f.label :youtube_link
+    = f.text_field :youtube_link
+  .field
+    = f.label :logo_image
+    = f.file_field :logo_image
+    
+  .actions = f.submit

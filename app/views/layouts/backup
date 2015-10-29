@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
+doctype html
+html 
+	head
 		<meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Club Registration System</title>
@@ -20,11 +20,8 @@
 		<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 		<meta name="msapplication-TileColor" content="#3372DF">
 		<%= csrf_meta_tags %>
-	</head>
-	<body>
-		
+	body	
 		<%= yield %>
 		<!--<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>-->
-	</body>
-</html>
+	

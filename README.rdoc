@@ -17,6 +17,7 @@ https://gorails.com/setup/osx/10.10-yosemite
 
 For Linux users follow this guide:
 https://gorails.com/setup/ubuntu/15.04
+(Make sure you choose the correct OS version)
 
 
 Create .env file on root folder (Production database haven't setup yet) :
